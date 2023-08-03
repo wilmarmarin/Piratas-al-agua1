@@ -295,7 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9681662f790ff42e5afa8afe0d37d8b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charID: 2
+  charID: 1
 --- !u!1 &4638138
 GameObject:
   m_ObjectHideFlags: 0
@@ -1735,9 +1735,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 341785041}
-        m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
-        m_MethodName: changePanel
+      - m_Target: {fileID: 341785037}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: ChangeSceneID
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1747,9 +1747,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 341785037}
-        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: loadScene
+      - m_Target: {fileID: 341785041}
+        m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
+        m_MethodName: changePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3080,7 +3080,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &546418466
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4015,7 +4015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9681662f790ff42e5afa8afe0d37d8b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charID: 1
+  charID: 0
 --- !u!1 &860365428
 GameObject:
   m_ObjectHideFlags: 0
@@ -4869,9 +4869,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 996545169}
-        m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
-        m_MethodName: changePanel
+      - m_Target: {fileID: 996545165}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: ChangeSceneID
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4881,9 +4881,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 996545165}
-        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: loadScene
+      - m_Target: {fileID: 996545169}
+        m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
+        m_MethodName: changePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5258,7 +5258,8 @@ GameObject:
   - component: {fileID: 1114011801}
   - component: {fileID: 1114011800}
   - component: {fileID: 1114011799}
-  - component: {fileID: 1114011798}
+  - component: {fileID: 1114011803}
+  - component: {fileID: 1114011802}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -5286,19 +5287,6 @@ RectTransform:
   m_AnchoredPosition: {x: -727, y: 358}
   m_SizeDelta: {x: 127.0794, y: 108.3825}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1114011798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1114011796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2851b384cdda419e9f9e3c89680f5e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panelSelect: 2
 --- !u!114 &1114011799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5343,9 +5331,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1114011798}
-        m_TargetAssemblyTypeName: PanelSelect, Assembly-CSharp
-        m_MethodName: changePanel
+      - m_Target: {fileID: 1114011802}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: ChangeSceneID
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5405,6 +5393,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1114011796}
   m_CullTransparentMesh: 1
+--- !u!114 &1114011802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114011796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0506fd5845d774b6c987717354c02ff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneID: 3
+--- !u!114 &1114011803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114011796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9a497d2c43e4bf19cc3626cf035e47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelSelect: 7
 --- !u!1 &1119011812
 GameObject:
   m_ObjectHideFlags: 0
@@ -6038,7 +6052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9681662f790ff42e5afa8afe0d37d8b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charID: 4
+  charID: 3
 --- !u!1 &1228908740
 GameObject:
   m_ObjectHideFlags: 0
@@ -6512,9 +6526,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1382873846}
-        m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
-        m_MethodName: changePanel
+      - m_Target: {fileID: 1382873842}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: ChangeSceneID
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6524,9 +6538,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1382873842}
-        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: loadScene
+      - m_Target: {fileID: 1382873846}
+        m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
+        m_MethodName: changePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8251,7 +8265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9681662f790ff42e5afa8afe0d37d8b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charID: 3
+  charID: 2
 --- !u!1 &1887629615
 GameObject:
   m_ObjectHideFlags: 0
